@@ -1,5 +1,5 @@
 class Calculator {
-    fun calculator(bilangan1: Int, bilangan2: Int, operasi: String): Int{
+    fun calculator(bilangan1: Double, bilangan2: Double, operasi: String): Double{
         return if(operasi == "+"){
             bilangan1 + bilangan2
         }else if(operasi == "-"){
@@ -18,10 +18,10 @@ fun main(){
     val calculator = Calculator()
 
     print("Masukkan bilangan: ")
-    val bilangan1: Int = readLine()?.toInt() ?: 0
+    val bilangan1: Double = readLine()?.toDouble() ?: 0.0
 
     print("Masukkan bilangan selanjutnya: ")
-    val bilangan2: Int = readLine()?.toInt() ?: 0
+    val bilangan2: Double = readLine()?.toDouble() ?: 0.0
 
     print("Masukkan operasi yang anda inginkan ( + - / *): ")
     val operasi = readLine() ?: ""
